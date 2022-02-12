@@ -334,7 +334,8 @@ int main(int argc, char **argv) {
                         samples[sample_idx++] = sample;
                         sample_length = match;
 
-                        printf("Received sample (%d) %d/%d...\n", match, sample_idx, config_record_samples);
+                        printf("Received sample (Ding Dong?) (%d) %d/%d...\n", match, sample_idx, config_record_samples);
+						exit(0);
                     } else if (sample_length != match) {
                         sample_fails++;
                         printf("Received invalid sample (%d) %d/%d...\n", match, sample_idx, config_record_samples);
